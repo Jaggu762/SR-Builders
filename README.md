@@ -114,7 +114,7 @@ This repository contains the website code for SR Builders & Developers.
 This website is built to showcase our projects, services, and company profile.
 
 ### Technology Stack
-*(Add your tech stack here - e.g., HTML, CSS, JavaScript, React, etc.)*
+TypeScript, CSS, JavaScript, HTML
 
 ### Local Development
 ```bash
