@@ -58,7 +58,9 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://wa.me/919991918125?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20a%20construction%20project"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/50"
             >
               Get Quote
@@ -97,7 +99,9 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://wa.me/919991918125?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20a%20construction%20project"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-4 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300"
             >
