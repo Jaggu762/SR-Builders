@@ -166,7 +166,7 @@ export default function Footer() {
 
         <div className="mt-6 text-center">
           <p className="text-slate-500 text-xs">
-            Crafted with excellence by SR BUILDERS
+            Crafted with excellence by <a href="https://github.com/Jaggu762" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">Jiten Dhull</a>
           </p>
         </div>
       </div>
