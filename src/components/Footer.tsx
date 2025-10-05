@@ -135,8 +135,8 @@ export default function Footer() {
                   <div>
                     <div className="text-slate-500 text-xs mb-1">Address</div>
                     <div className="leading-relaxed">
-                      123 Construction Ave<br />
-                      Building City, BC 12345
+                      OPP. RELAINCE MET CITY GATE NO. SECTOR 5&7
+                      YAKUBPUR<br />JHAJJAR GURGAON HIGHWAY (HR.)
                     </div>
                   </div>
                 </div>
