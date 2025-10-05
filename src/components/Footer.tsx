@@ -154,8 +154,8 @@ export default function Footer() {
               <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
-                Terms of Service
+              <a href="#terms" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
+                Terms & Conditions
               </a>
               <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
                 Sitemap
