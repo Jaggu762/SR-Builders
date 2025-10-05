@@ -74,21 +74,21 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      content: '+919991918125',
+      link: 'tel:+919991918125',
       gradient: 'from-green-500 to-emerald-600',
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@construction.com',
-      link: 'mailto:info@construction.com',
+      content: 'srbuilders9999@gmail.com',
+      link: 'mailto:srbuilders9999@gmail.com',
       gradient: 'from-blue-500 to-blue-600',
     },
     {
       icon: MapPin,
       title: 'Address',
-      content: '123 Construction Ave, Building City, BC 12345',
+      content: 'OPP. RELAINCE MET CITY GATE NO. SECTOR 5&7 YAKUBPUR JHAJJAR GURGAON HIGHWAY (HR.)',
       link: '#',
       gradient: 'from-orange-500 to-orange-600',
     },
@@ -183,7 +183,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+91-755-581-1318"
                 />
               </div>
 
