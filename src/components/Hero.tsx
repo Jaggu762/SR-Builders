@@ -34,7 +34,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 mb-2">
                 SR BUILDERS
               </span>
@@ -46,7 +46,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">
               WE BUILD SMART SPACES
             </h2>
           </div>
@@ -56,7 +56,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed px-4">
               Construction Services & Project Management delivering excellence since 2019.
               We provide our clients with an <span className="text-green-400 font-semibold">"I am assured"</span> experience
               through clear communication and quality execution.
@@ -69,46 +69,48 @@ export default function Hero() {
             }`}
           >
             <a
+              href="https://wa.me/919991918125?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20a%20construction%20project"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center"
+            >
+              Get Quote Now
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
               href="#projects"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-slate-800/80 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-orange-500/50 hover:border-orange-400 hover:bg-slate-700/80 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center"
             >
               View Our Projects
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a
-              href="#contact"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-slate-800/80 backdrop-blur-sm text-white font-semibold rounded-xl border-2 border-green-500/50 hover:border-green-400 hover:bg-slate-700/80 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-            >
-              Get In Touch
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
           </div>
 
           <div
-            className={`grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto pt-16 transform transition-all duration-1000 delay-1000 ${
+            className={`grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto pt-12 sm:pt-16 transform transition-all duration-1000 delay-1000 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-orange-500/50 transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl font-bold text-orange-400 mb-2">6+</div>
-              <div className="text-slate-300 text-sm">Years Experience</div>
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-orange-500/50 transform hover:scale-105 transition-all duration-300">
+              <div className="text-3xl sm:text-4xl font-bold text-orange-400 mb-1 sm:mb-2">6+</div>
+              <div className="text-slate-300 text-xs sm:text-sm">Years Experience</div>
             </div>
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-orange-500/50 transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl font-bold text-orange-400 mb-2">12+</div>
-              <div className="text-slate-300 text-sm">Crores Projects</div>
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-orange-500/50 transform hover:scale-105 transition-all duration-300">
+              <div className="text-3xl sm:text-4xl font-bold text-orange-400 mb-1 sm:mb-2">12+</div>
+              <div className="text-slate-300 text-xs sm:text-sm">Crores Projects</div>
             </div>
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-green-500/50 transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl font-bold text-green-400 mb-2">80+</div>
-              <div className="text-slate-300 text-sm">Team Members</div>
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-green-500/50 transform hover:scale-105 transition-all duration-300">
+              <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-1 sm:mb-2">80+</div>
+              <div className="text-slate-300 text-xs sm:text-sm">Team Members</div>
             </div>
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-green-500/50 transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl font-bold text-green-400 mb-2">100%</div>
-              <div className="text-slate-300 text-sm">Client Satisfaction</div>
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-green-500/50 transform hover:scale-105 transition-all duration-300">
+              <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-1 sm:mb-2">100%</div>
+              <div className="text-slate-300 text-xs sm:text-sm">Client Satisfaction</div>
             </div>
           </div>
 
           <div
-            className={`flex flex-col sm:flex-row gap-6 justify-center items-center pt-12 transform transition-all duration-1000 delay-1200 ${
+            className={`flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center pt-8 sm:pt-12 transform transition-all duration-1000 delay-1200 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
@@ -117,18 +119,18 @@ export default function Hero() {
               className="inline-flex items-center gap-3 text-slate-300 hover:text-orange-400 transition-colors duration-300 group"
             >
               <div className="p-2 bg-slate-800/50 rounded-lg group-hover:bg-orange-500/20 transition-colors duration-300">
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <span className="text-sm font-medium">+91-9991918125</span>
+              <span className="text-xs sm:text-sm font-medium">+91-9991918125</span>
             </a>
             <a
               href="mailto:srbuilders9999@gmail.com"
               className="inline-flex items-center gap-3 text-slate-300 hover:text-green-400 transition-colors duration-300 group"
             >
               <div className="p-2 bg-slate-800/50 rounded-lg group-hover:bg-green-500/20 transition-colors duration-300">
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <span className="text-sm font-medium">srbuilders9999@gmail.com</span>
+              <span className="text-xs sm:text-sm font-medium break-all">srbuilders9999@gmail.com</span>
             </a>
           </div>
         </div>
