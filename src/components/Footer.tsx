@@ -151,13 +151,13 @@ export default function Footer() {
               &copy; {currentYear} SR BUILDERS. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
+              <a href="#privacy" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
                 Privacy Policy
               </a>
               <a href="#terms" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
                 Terms & Conditions
               </a>
-              <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
+              <a href="#sitemap" className="text-slate-400 hover:text-orange-400 transition-colors duration-300">
                 Sitemap
               </a>
             </div>

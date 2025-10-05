@@ -8,21 +8,34 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import TermsAndConditions from './components/TermsAndConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Sitemap from './components/Sitemap';
 
 function App() {
-  const [showTerms, setShowTerms] = useState(false);
+  const [currentPage, setCurrentPage] = useState<'home' | 'terms' | 'privacy' | 'sitemap'>('home');
 
   useEffect(() => {
     const hash = window.location.hash;
     if (hash === '#terms') {
-      setShowTerms(true);
+      setCurrentPage('terms');
+    } else if (hash === '#privacy') {
+      setCurrentPage('privacy');
+    } else if (hash === '#sitemap') {
+      setCurrentPage('sitemap');
+    } else {
+      setCurrentPage('home');
     }
 
     const handleHashChange = () => {
-      if (window.location.hash === '#terms') {
-        setShowTerms(true);
+      const hash = window.location.hash;
+      if (hash === '#terms') {
+        setCurrentPage('terms');
+      } else if (hash === '#privacy') {
+        setCurrentPage('privacy');
+      } else if (hash === '#sitemap') {
+        setCurrentPage('sitemap');
       } else {
-        setShowTerms(false);
+        setCurrentPage('home');
       }
     };
 
@@ -30,11 +43,31 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  if (showTerms) {
+  if (currentPage === 'terms') {
     return (
       <div className="min-h-screen bg-slate-900">
         <Navigation />
         <TermsAndConditions />
+        <Footer />
+      </div>
+    );
+  }
+
+  if (currentPage === 'privacy') {
+    return (
+      <div className="min-h-screen bg-slate-900">
+        <Navigation />
+        <PrivacyPolicy />
+        <Footer />
+      </div>
+    );
+  }
+
+  if (currentPage === 'sitemap') {
+    return (
+      <div className="min-h-screen bg-slate-900">
+        <Navigation />
+        <Sitemap />
         <Footer />
       </div>
     );
