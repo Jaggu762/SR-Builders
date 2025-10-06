@@ -91,7 +91,7 @@ export default function About() {
               </div>
               <p className="text-slate-300 leading-relaxed mb-4">
                 Founded in 2019, SR Builders has grown into a trusted name in construction services and project management.
-                Based in Gurgaon, Haryana, we specialize in delivering comprehensive building solutions for industrial,
+                Based in YAKUBPUR JHAJJAR GURGAON HIGHWAY, HARYANA we specialize in delivering comprehensive building solutions for industrial,
                 commercial, and residential projects.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
