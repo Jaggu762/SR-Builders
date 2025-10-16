@@ -16,7 +16,7 @@ SR Builders began as a general contractor in 2019 and has since undertaken numer
 
 Today, SR Builders serves as the main contractor for small to medium-sized projects and provides comprehensive project management services for industrial and commercial developments.
 
-### Our Commitment
+### Our Commitment's
 
 We provide clients with an **"I am assured"** experience through:
 
