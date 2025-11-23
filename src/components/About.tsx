@@ -17,13 +17,14 @@ export default function About() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -90,16 +91,17 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white">Our Story</h3>
               </div>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Founded in 2019, SR Builders has grown into a trusted name in construction services and project management.
-                Based in YAKUBPUR JHAJJAR GURGAON HIGHWAY, HARYANA we specialize in delivering comprehensive building solutions for industrial,
-                commercial, and residential projects.
+                Since our founding in 2019, SR Builders has been on a mission to transform the construction landscape in Haryana. 
+                Located at YAKUBPUR JHAJJAR GURGAON HIGHWAY, we've built our reputation one project at a time, specializing in 
+                industrial, commercial, and residential construction that our clients can truly rely on.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
-                With a strong portfolio exceeding 12 Crores in project value, we have established ourselves as reliable
-                partners who deliver on our promise of quality, timeliness, and transparent communication.
+                Today, with over 12 Crores in successfully completed projects, we're proud to be known as partners who don't just 
+                meet expectations—we exceed them. From our very first project to our latest warehouse development, we've stayed 
+                true to our core values: quality craftsmanship, honest communication, and timely delivery.
               </p>
               <p className="text-green-400 font-semibold text-lg">
-                "I am assured" - That's the confidence we provide to every client.
+                "I am assured" - This isn't just a tagline, it's the feeling we strive to give every single client.
               </p>
             </div>
           </div>
@@ -117,8 +119,9 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white">Vision</h3>
               </div>
               <p className="text-slate-300 leading-relaxed">
-                To be the leading construction and project management company, recognized for innovation,
-                sustainability, and delivering smart spaces that enhance quality of life and business operations.
+                To be a respectable building contractor known for consistently delivering beyond expectations. We dream of 
+                creating smart spaces that don't just serve their purpose, but enhance the way people work and live. 
+                Innovation, sustainability, and client satisfaction drive everything we do.
               </p>
             </div>
 
@@ -130,9 +133,9 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white">Mission</h3>
               </div>
               <p className="text-slate-300 leading-relaxed">
-                To provide exceptional construction services through expert project management, quality craftsmanship,
-                and unwavering commitment to client satisfaction. We build lasting relationships by delivering
-                projects that exceed expectations.
+                We're here to procure projects at competitive pricing, provide safe working conditions for everyone on our sites, 
+                and deliver quality work within reasonable timeframes. Through expert project management, skilled craftsmanship, 
+                and an unwavering commitment to our clients, we build lasting relationships—not just buildings.
               </p>
             </div>
           </div>
@@ -180,15 +183,15 @@ export default function About() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-6">Why Choose Us?</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Why Partner With Us?</h3>
               <ul className="space-y-4">
                 {[
-                  'Experienced team with 80+ skilled professionals',
-                  'Proven track record with 12+ Crores in completed projects',
-                  'Comprehensive services from design to execution',
-                  'Transparent communication and regular updates',
-                  'Quality materials and systematic inspection',
-                  'Timely project delivery without compromise',
+                  'A dedicated team of 5 engineers, 10 supervisors, and 80+ skilled professionals',
+                  'Proven track record with 12+ Crores in successfully completed projects',
+                  'Complete service coverage from initial design to final execution',
+                  'Clear, transparent communication at every stage—no surprises',
+                  'Commitment to quality materials and thorough systematic inspection',
+                  'Strong focus on timely project delivery without cutting corners',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />

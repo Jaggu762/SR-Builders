@@ -1,4 +1,4 @@
-import { ArrowLeft, Home, Info, Briefcase, Users, FolderOpen, Mail, FileText, Shield } from 'lucide-react';
+import { ArrowLeft, Home, Mail, FileText } from 'lucide-react';
 
 export default function Sitemap() {
   const sitePages = [
