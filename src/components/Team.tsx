@@ -65,7 +65,7 @@ export default function Team() {
   ];
 
   const stats = [
-    { number: '12+', label: 'Crores in Projects' },
+    { number: '₹12+', label: 'Crores Project Value' },
     { number: '6+', label: 'Years Experience' },
     { number: '100%', label: 'Client Satisfaction' },
     { number: '80+', label: 'Skilled Team Members' },
