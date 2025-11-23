@@ -57,9 +57,9 @@ export default function Hero() {
             }`}
           >
             <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed px-4">
-              Construction Services & Project Management delivering excellence since 2019.
-              We provide our clients with an <span className="text-green-400 font-semibold">"I am assured"</span> experience
-              through clear communication and quality execution.
+              We've been building more than just structures since 2019—we build trust. Specializing in construction 
+              services and project management, we give our clients an <span className="text-green-400 font-semibold">"I am assured"</span> experience 
+              through honest communication, quality work, and genuine care for every project.
             </p>
           </div>
 

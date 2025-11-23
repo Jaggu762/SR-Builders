@@ -17,13 +17,14 @@ export default function Team() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -31,32 +32,32 @@ export default function Team() {
   const capabilities = [
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Seasoned professionals with decades of combined experience',
+      title: 'Experienced Team',
+      description: '5 engineers, 10 supervisors, and 80+ skilled workers ready to bring your vision to life',
       gradient: 'from-blue-500 to-blue-600',
       bgGradient: 'from-blue-500/10 to-blue-600/10',
       borderColor: 'border-blue-500/30 hover:border-blue-500/60',
     },
     {
       icon: Award,
-      title: 'Quality Standards',
-      description: 'Certified and compliant with industry best practices',
+      title: 'Quality First',
+      description: 'Every project gets the same meticulous attention to detail and high standards',
       gradient: 'from-amber-500 to-orange-600',
       bgGradient: 'from-amber-500/10 to-orange-600/10',
       borderColor: 'border-amber-500/30 hover:border-amber-500/60',
     },
     {
       icon: Target,
-      title: 'Precision Delivery',
-      description: 'On-time project completion with attention to detail',
+      title: 'On-Time, Every Time',
+      description: 'We respect your deadlines and work systematically to meet them without shortcuts',
       gradient: 'from-green-500 to-emerald-600',
       bgGradient: 'from-green-500/10 to-emerald-600/10',
       borderColor: 'border-green-500/30 hover:border-green-500/60',
     },
     {
       icon: TrendingUp,
-      title: 'Continuous Innovation',
-      description: 'Adopting latest construction technologies and methods',
+      title: 'Always Learning',
+      description: 'Our team undergoes regular training to stay updated with modern construction methods',
       gradient: 'from-cyan-500 to-teal-600',
       bgGradient: 'from-cyan-500/10 to-teal-600/10',
       borderColor: 'border-cyan-500/30 hover:border-cyan-500/60',
@@ -64,10 +65,10 @@ export default function Team() {
   ];
 
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '25+', label: 'Years Experience' },
-    { number: '98%', label: 'Client Satisfaction' },
-    { number: '150+', label: 'Expert Team Members' },
+    { number: '12+', label: 'Crores in Projects' },
+    { number: '6+', label: 'Years Experience' },
+    { number: '100%', label: 'Client Satisfaction' },
+    { number: '80+', label: 'Skilled Team Members' },
   ];
 
   return (
@@ -83,10 +84,10 @@ export default function Team() {
           }`}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-600 mb-4">
-            Team & Capabilities
+            Our Team & Expertise
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            Building excellence through expertise, dedication, and innovation
+            The people behind every successful project—dedicated, skilled, and committed to excellence
           </p>
         </div>
 
@@ -138,9 +139,9 @@ export default function Team() {
           }`}
         >
           <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-10 border border-slate-700/50">
-            <h3 className="text-2xl font-bold text-white mb-4">Why Choose Us</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">What Sets Us Apart</h3>
             <p className="text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed">
-              Our diverse team brings together architects, engineers, project managers, and skilled craftsmen who share a commitment to excellence. With rigorous training programs and continuous professional development, we ensure every team member stays at the forefront of industry standards and innovations.
+              Our dedicated team comprises 5 professional engineers, 10 experienced supervisors, and over 80 skilled workers who share a commitment to excellence. We invest in comprehensive training programs to ensure our team stays equipped with the right technical and management skills, certifications, and practical knowledge needed for successful project delivery.
             </p>
           </div>
         </div>

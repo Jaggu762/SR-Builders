@@ -30,13 +30,14 @@ export default function Services() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -195,9 +196,10 @@ export default function Services() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <h3 className="text-3xl font-bold text-white mb-6">Need a Custom Solution?</h3>
+          <h3 className="text-3xl font-bold text-white mb-6">Have Something Unique in Mind?</h3>
           <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-            Every project is unique. We offer tailored solutions to meet your specific construction and project management needs.
+            We know that no two projects are exactly alike. That's why we listen first, then craft custom solutions 
+            tailored to your specific needs, budget, and vision. Let's talk about what you're planning to build.
           </p>
           <a
             href="#contact"

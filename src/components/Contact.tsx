@@ -25,13 +25,14 @@ export default function Contact() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -107,10 +108,10 @@ export default function Contact() {
           }`}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 mb-4">
-            Get In Touch
+            Let's Build Together
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            Ready to start your project? Contact us today for a consultation
+            Have a project in mind? We'd love to hear about it. Reach out for a free consultation—no pressure, just honest advice.
           </p>
         </div>
 
@@ -223,7 +224,7 @@ export default function Contact() {
             {submitStatus === 'success' && (
               <div className="p-4 bg-green-500/10 border border-green-500/50 rounded-xl">
                 <p className="text-green-400 text-center font-medium">
-                  Thank you! Your message has been sent successfully.
+                  Thank you for reaching out! We've received your message and will get back to you shortly.
                 </p>
               </div>
             )}
@@ -231,7 +232,7 @@ export default function Contact() {
             {submitStatus === 'error' && (
               <div className="p-4 bg-red-500/10 border border-red-500/50 rounded-xl">
                 <p className="text-red-400 text-center font-medium">
-                  Something went wrong. Please try again.
+                  Oops! Something went wrong on our end. Please try again or give us a call directly.
                 </p>
               </div>
             )}
